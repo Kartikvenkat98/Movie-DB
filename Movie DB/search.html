@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Movies</title>
+    <style>
+		body
+		{
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			font-size: 22px;
+			background:url(search.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		h2
+		{
+			font-weight: 200;
+			color: #0F0;
+		}
+		#search
+	    {
+			font-size:15px;
+			background-color: #F00;
+			color:white;
+			border:2px solid #F00;
+			padding:5px;
+	    }
+	    #search:hover
+	    {
+			background-color:white;
+			color: #F00;
+	    }
+		#title, #plot, #error
+		{
+			color: #FF0;
+		}
+		#year, #runtime, #director, #writers
+		{
+			color: #00F;
+		}
+		#rating, #actors
+		{
+			color: #0F0;
+		}
+		#type, #language, #country
+		{
+			color: #0FF;
+		}
+		#genre, #awards
+		{
+			color: #F0F;
+		}
+		</style>
+</head>
+<body>
+	<center>
+    <h2>Search for Entertainment</h2>
+	<input type="text" id="searchText" name="searchText"/><br /><br />
+	<button id="search">Search</button><br />
+	<div id="results">
+		<p id="title"></p>
+        <p id="year"></p>
+        <p id="runtime"></p>
+		<p id="rating"></p>
+		<p id="type"></p>
+		<p id="genre"></p>
+        <div id="image">
+			<img id="poster"/>
+		</div>
+        <p id="plot"></p>
+        <p id="director"></p>
+        <p id="writers"></p>
+        <p id="actors"></p>
+        <p id="language"></p>
+        <p id="country"></p>
+        <p id="awards"></p>
+		<p id="error"></p>
+    </div>
+   
+    </center>
+	<script src="search.js" type='text/javascript'>
+	</script>
+</body>
+</html>
